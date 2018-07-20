@@ -137,7 +137,7 @@ public class HttpVisitor {
 			user.setBack_num(null == data2.get("bn") ? 0 :Integer.parseInt(data2.getString("bn")));		//已退数量
 			user.setCheck_port("海坤手持机");
 			user.setCheck_device("Android 5.0");
-			//json2 = new JSONObject(APIFactory.checkTicket(user, 0));			
+			json2 = new JSONObject(APIFactory.checkTicket(user, 0));			
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
